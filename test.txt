@@ -1,0 +1,3 @@
+	secret, err := cli.CoreV1().Secrets(cm.Namespace).Get(context.TODO(),secretRef, metav1.GetOptions{})
+
+	pkl, err := s.cli.VaultV1alpha1().Passkeys().List(metav1.ListOptions{})
